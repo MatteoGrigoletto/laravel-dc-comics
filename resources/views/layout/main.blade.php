@@ -17,8 +17,8 @@
 <body>
     <main>
         @yield('content')
-        <div>
-            <a href="{{ route('comics.index') }}"> go back</a>
+        <div class="all-date">
+            <a href="{{ route('comics.index') }}">All date</a>
         </div>
     </main>
    
