@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(169, 159, 159);
+    header {
+        text-align: center;
+        margin: 50px 0px;
+
+        a {
+            font-size: 2rem;
+        }
+    }
+    main {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: blueviolet;
+}

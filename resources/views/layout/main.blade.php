@@ -9,18 +9,19 @@
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-W
     <!-- Styles -->
     @vite('resources/js/app.js')
 
 </head>
 
 <body>
-   
-
     <main>
         @yield('content')
+        <div>
+            <a href="{{ route('comics.index') }}"> go back</a>
+        </div>
     </main>
+   
 </body>
 
 </html>
