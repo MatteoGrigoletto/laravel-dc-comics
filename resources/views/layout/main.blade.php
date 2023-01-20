@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <header>
+        @yield('title')
+    </header>
     <main>
         @yield('content')
         <div class="all-date">

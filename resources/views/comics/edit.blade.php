@@ -3,6 +3,7 @@
 @section('content')
     <form action="{{ route('comics.update', $comic) }}" method="POST">
         @csrf
+        @method('PUT')
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
             <input value="{{ $comic['title'] }}" type="text" class="form-control" name="title" id="title"
