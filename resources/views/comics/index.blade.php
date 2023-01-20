@@ -21,10 +21,10 @@
                 <td>
                     <button type="submit"><a href="{{ route('comics.show', $comic) }}">detail</a></button>
                     <button><a href="{{ route('comics.edit', $comic) }}">edit</a></button>
-                    <form class="my-form" action="{{ route('comics.destroy', $comic) }}" method="POST">
+                    <form  onsubmit="return confirm('Do you really want to submit the form?')" class="my-form" action="{{ route('comics.destroy', $comic) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" title="delete">delete</button>
+                        <button  type="submit" title="delete">delete</button>
                     </form>
 
                 </td>
